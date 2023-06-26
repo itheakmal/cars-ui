@@ -6,7 +6,6 @@ export const Home = () => {
     return (
         <div>
             <ListingCars />
-            {/* <AddCar /> */}
         </div>
     )
 }

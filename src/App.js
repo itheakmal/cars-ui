@@ -28,7 +28,6 @@ export default function App() {
             <Route path="/categories" element={<Categories />} />
             <Route path="/add-category" element={<AddCategory />} />
             <Route path="/add-category/:id" element={<AddCategory />} />
-            {/* <Route path="dashboard" element={<Dashboard />} /> */}
             <Route path="*" element={<NoMatch />} />
           </Route>
           <Route path="/" element={<EmptyLayout />}>
@@ -40,63 +39,6 @@ export default function App() {
     </div>
   );
 }
-
-// function Layout() {
-//   return (
-//     <div>
-//       <nav>
-//         <ul>
-//           <li>
-//             <Link to="/">Home</Link>
-//           </li>
-//           <li>
-//             <Link to="/login">login</Link>
-//           </li>
-//           <li>
-//             <Link to="/createCustomer">createCustomer</Link>
-//           </li>
-//           <li>
-//             <Link to="/dashboard">Dashboard</Link>
-//           </li>
-//           <li>
-//             <Link to="/nothing-here">Nothing Here</Link>
-//           </li>
-//         </ul>
-//       </nav>
-
-//       <hr />
-
-//       {/* An <Outlet> renders whatever child route is currently active,
-//           so you can think about this <Outlet> as a placeholder for
-//           the child routes we defined above. */}
-//       <Outlet />
-//     </div>
-//   );
-// }
-
-// function Home() {
-//   return (
-//     <div>
-//       <h2>Home</h2>
-//     </div>
-//   );
-// }
-
-function About() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
-}
-
-// function Dashboard() {
-//   return (
-//     <div>
-//       <h2>Dashboard</h2>
-//     </div>
-//   );
-// }
 
 function NoMatch() {
   return (

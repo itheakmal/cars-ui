@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { css } from "@emotion/react";
 import {
     Box,
@@ -23,19 +23,6 @@ const AddCategory = () => {
     const { errors, validate } = useCatErrors();
     const [loading, setLoading] = useState(false);
     const { id } = useParams();
-
-    //   useEffect(() => {
-    //     setLoading(true);
-    //     getRequest('category')
-    //       .then((response) => {
-    //         setCategories(response);
-    //         setLoading(false);
-    //       })
-    //       .catch((error) => {
-    //         alert(error.message);
-    //         setLoading(false);
-    //       });
-    //   }, []);
 
     useEffect(() => {
         console.log(id)

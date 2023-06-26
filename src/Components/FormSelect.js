@@ -5,7 +5,7 @@ import {
   MenuItem,
   InputLabel,
 } from "@mui/material";
-// A custom component to display a select field with error message
+// select field with error message
 export const FormSelect = ({ label, inputProps, error, options }) => {
     console.log('label', label)
     console.log('inputProps', inputProps)

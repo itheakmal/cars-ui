@@ -4,7 +4,7 @@ import {
   TextField,
 } from "@mui/material";
 
-// A custom component to display a form field with error message
+// form field with error message
 export const FormField = ({ label, type, inputProps, error }) => {
     return (
       <Grid item xs={12}>
